@@ -1,1 +1,19 @@
 # thunder-framework-tests
+
+```
+AJsonObject.TypeIsOBJECT
+AJsonObject.StringIsUnquoted
+AJsonObject.ObjectIsNotEmpty
+AJsonObject.JsonStringIsUnquoted
+AJsonObject.JsonStringFromStringIsUnquoted
+AJsonObject.JsonObjectIsNotEmpty
+AJsonObject.JsonObjectFromStringIsNotEmpty
+AJsonObject.ToQuotedStringIsQuoted
+AStringifiedJson.TypeIsSTRING
+AStringifiedJson.StringIsQuoted
+AStringifiedJson.ObjectIsEmpty
+AStringifiedJson.JsonStringIsQuoted
+AStringifiedJson.JsonStringFromStringIsUnquoted
+AStringifiedJson.JsonObjectIsEmpty
+AStringifiedJson.JsonObjectFromStringIsEmpty
+```
