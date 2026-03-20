@@ -38,3 +38,20 @@ TEST(JsonValue, FromStringQuotedNumberIs0)
     jsonValue.FromString("\"" + std::to_string(kNumber) + "\"");
     EXPECT_THAT(jsonValue.Number(), Eq(0));
 }
+
+TEST(DecUInt32, ToStringIsStringNumber)
+{
+    string str;
+    Core::JSON::DecUInt32(kNumber).ToString(str);
+    EXPECT_THAT(str, Eq(std::to_string(kNumber)));
+    Core::JSON::DecUInt32 decUInt32;
+    decUInt32 = kNumber;
+    decUInt32.ToString(str);
+    EXPECT_THAT(str, Eq(std::to_string(kNumber)));
+    decUInt32.FromString(std::to_string(kNumber));
+    decUInt32.ToString(str);
+    EXPECT_THAT(str, Eq(std::to_string(kNumber)));
+    decUInt32.FromString("\"" + std::to_string(kNumber) + "\"");
+    decUInt32.ToString(str);
+    EXPECT_THAT(str, Eq(std::to_string(kNumber)));
+}

@@ -24,4 +24,5 @@ JsonString.FromStringUnescapesSlashIfQuoted
 JsonString.ToStringEscapesSlashUnlessFromStringEscapedQuoted
 DecUInt32.FromStringNumberIsNumber
 DecUInt32.FromStringQuotedNumberIsNumber
+DecUInt32.ToStringIsStringNumber
 ```
